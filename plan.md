@@ -29,13 +29,12 @@ instal node . js
 2. fire base
 3. sdk
 4. creat folder
-5.import ( inti app) from 'fb/app
-constant fb = 
-
-6. import <service)\auth
-7. import fbstore 
-8. get[]
-9. auth , user {
+5. import ( inti app) from 'fb/app
+6. constant fb = 
+7. import <service)\auth
+8. import fbstore 
+9. get[]
+10. auth , user {
     if user != null
 console.log( log in)
 
