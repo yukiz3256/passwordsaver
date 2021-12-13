@@ -26,14 +26,14 @@ notes:
 npm and a module
 instal node . js
 1. terminal code to run
-2. fir ba
+2. fire base
 3. sdk
 4. creat folder
-5.imppotr ( inti app) from 'fb/app
-const fb = 
+5.import ( inti app) from 'fb/app
+constant fb = 
 
-6. imporot <service)\auth
-7. imprt fbstore 
+6. import <service)\auth
+7. import fbstore 
 8. get[]
 9. auth , user {
     if user != null
