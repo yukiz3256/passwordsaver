@@ -20,6 +20,8 @@ console.log ("no such user try again?")
 )
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
+const provider = new GoogleAuthProvider(); //feb
+
 const auth = getAuth();
 signInWithPopup(auth, provider)
   .then((result) => {
