@@ -1,9 +1,12 @@
 
 
+
+
+
 import { initializeApp } from 'firebase/app'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { getFirestore} from 'firebase/firestore'
-
+import { getAnalytics } from "firebase/analytics";
 const firebaseApp = initializeApp({
 const db = getFirestore(firebaseApp);
 
