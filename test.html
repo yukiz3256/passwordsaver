@@ -8,50 +8,90 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <style>
             /* CSS */
+<<<<<<< HEAD
 
+=======
+            
+           h1 {
+            background-color: red;
+           }
+           
+>>>>>>> cb1073c7482d684d82d3799647aec04318de8b0c
         </style>
 
         <title>Title</title>
     </head>
     <body>
+        <!-- HTML -->
+        
         <h1> Hello! Welcome to Password Saver</h1>
         <div id ="LoginScreen">
-            <button id = login> Login with Google</button>
+            <button id = "login"> Login with Google</button>
         </div>
-        <div id =dashboard>
-            <button id=logout> Log Out </button>
+        <div id ="dashboard">
+            <button id="logout"> Log Out </button>
         </div>
+<<<<<<< HEAD
         <!-- HTML -->
 
 </script>
+=======
+
+        
+        
+        <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+>>>>>>> cb1073c7482d684d82d3799647aec04318de8b0c
         <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+            
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyDwtt9nU5At77_2gIXsyPeYgV4AYibkvYo",
+                authDomain: "password-saver-33a01.firebaseapp.com",
+                databaseURL: "https://password-saver-33a01-default-rtdb.firebaseio.com",
+                projectId: "password-saver-33a01",
+                storageBucket: "password-saver-33a01.appspot.com",
+                messagingSenderId: "730030078547",
+                appId: "1:730030078547:web:396226808985562ab7e4a6",
+                measurementId: "G-LLVNVDFB8Q"
+            };
+            
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+            
+            //blog entry 4
+            document.getElementById('login').addEventListener('click', GoogleLogin)
+            document.getElementById('logout').addEventListener('click', LogoutUser)
+            
+            var provider = new firebase.auth.GoogleAuthProvider()
+            
+            function GoogleLogin(){
+                console.log('login')
+                firebase.auth().signInWithPopup(provider).then(res=>{
+                    console.log(res)
+                }).catch(e=>{
+                    console.log(e)
+                })
+            }
+            
+            function LogoutUser(){
+                console.log('logout')
+            }
+            
+        </script>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDwtt9nU5At77_2gIXsyPeYgV4AYibkvYo",
-    authDomain: "password-saver-33a01.firebaseapp.com",
-    databaseURL: "https://password-saver-33a01-default-rtdb.firebaseio.com",
-    projectId: "password-saver-33a01",
-    storageBucket: "password-saver-33a01.appspot.com",
-    messagingSenderId: "730030078547",
-    appId: "1:730030078547:web:396226808985562ab7e4a6",
-    measurementId: "G-LLVNVDFB8Q"
-  };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             // JS
+<<<<<<< HEAD
 
             import { initializeApp } from 'firebase/app';
             import { storage } from 'firebase/storage';
@@ -95,6 +135,51 @@
                 // ..
               });
 
+=======
+            
+        //     import { initializeApp } from 'firebase/app';
+        //     import { storage } from 'firebase/storage';
+        //     import { getAuth, onAuthStateChanged } from 'firebase/auth'
+        //     import { getFirestore} from 'firebase/firestore'
+            
+        //     //const firebaseConfig = initializeApp({
+        //       //...
+        //   // };
+            
+        //     const app = initializeApp(firebaseConfig);
+            
+        //     const firebaseApp = initializeApp({
+                
+        //     const db = getFirestore(firebaseApp);
+            
+        //     })
+            
+        //     //check if user logi
+        //     onAuthStateChanged(auth 
+        //         if user {
+        //             console.log ("logged in!");
+        //         }else{
+        //             console.log ("no such user try again?")
+        //         }
+            // )
+            
+            //Not using
+            // import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+            // // 12/20/21
+            // const auth = getAuth();
+            // createUserWithEmailAndPassword(auth, email, password)
+            //   .then((userCredential) => {
+            //     // Signed in 
+            //     const user = userCredential.user;
+            //     // ...
+            //   })
+            //   .catch((error) => {
+            //     const errorCode = error.code;
+            //     const errorMessage = error.message;
+            //     // ..
+            //   });
+                        
+>>>>>>> cb1073c7482d684d82d3799647aec04318de8b0c
         </script>
     </body>
 </html>
