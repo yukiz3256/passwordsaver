@@ -59,8 +59,19 @@
             document.getElementById('login').addEventListener('click', GoogleLogin)
             document.getElementById('logout').addEventListener('click', LogoutUser)
             
+            var provider = new firebase.auth.GoogleAuthProvider()
+            
             function GoogleLogin(){
-                
+                console.log('login')
+                firebase.auth().signInWithPopup(provider).then(res=>{
+                    console.log(res)
+                }).catch(e=>{
+                    console.log(e)
+                })
+            }
+            
+            function LogoutUser(){
+                console.log('logout')
             }
             
         </script>
@@ -71,31 +82,31 @@
         <script>
             // JS
             
-            import { initializeApp } from 'firebase/app';
-            import { storage } from 'firebase/storage';
-            import { getAuth, onAuthStateChanged } from 'firebase/auth'
-            import { getFirestore} from 'firebase/firestore'
+        //     import { initializeApp } from 'firebase/app';
+        //     import { storage } from 'firebase/storage';
+        //     import { getAuth, onAuthStateChanged } from 'firebase/auth'
+        //     import { getFirestore} from 'firebase/firestore'
             
-            //const firebaseConfig = initializeApp({
-              //...
-           // };
+        //     //const firebaseConfig = initializeApp({
+        //       //...
+        //   // };
             
-            const app = initializeApp(firebaseConfig);
+        //     const app = initializeApp(firebaseConfig);
             
-            const firebaseApp = initializeApp({
+        //     const firebaseApp = initializeApp({
                 
-            const db = getFirestore(firebaseApp);
+        //     const db = getFirestore(firebaseApp);
             
-            })
+        //     })
             
-            //check if user logi
-            onAuthStateChanged(auth 
-                if user {
-                    console.log ("logged in!");
-                }else{
-                    console.log ("no such user try again?")
-                }
-            )
+        //     //check if user logi
+        //     onAuthStateChanged(auth 
+        //         if user {
+        //             console.log ("logged in!");
+        //         }else{
+        //             console.log ("no such user try again?")
+        //         }
+            // )
             
             //Not using
             // import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
