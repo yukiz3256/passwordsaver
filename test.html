@@ -8,13 +8,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <style>
             /* CSS */
+<<<<<<< HEAD
+
+=======
             
            h1 {
             background-color: red;
            }
            
+>>>>>>> cb1073c7482d684d82d3799647aec04318de8b0c
         </style>
-        
+
         <title>Title</title>
     </head>
     <body>
@@ -27,10 +31,16 @@
         <div id ="dashboard">
             <button id="logout"> Log Out </button>
         </div>
+<<<<<<< HEAD
+        <!-- HTML -->
+
+</script>
+=======
 
         
         
         <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+>>>>>>> cb1073c7482d684d82d3799647aec04318de8b0c
         <script type="module">
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
@@ -81,6 +91,51 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             // JS
+<<<<<<< HEAD
+
+            import { initializeApp } from 'firebase/app';
+            import { storage } from 'firebase/storage';
+            import { getAuth, onAuthStateChanged } from 'firebase/auth'
+            import { getFirestore} from 'firebase/firestore'
+
+            //const firebaseConfig = initializeApp({
+              //...
+           // };
+
+            const app = initializeApp(firebaseConfig);
+
+            const firebaseApp = initializeApp({
+
+                const db = getFirestore(firebaseApp);
+
+            })
+
+
+            onAuthStateChanged(auth
+            if user {
+            console.log ("logged in!");
+            }
+             else{
+            console.log ("no such user try again?")
+            }
+            )
+
+            import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+            // 12/20/21
+            const auth = getAuth();
+            createUserWithEmailAndPassword(auth, email, password)
+              .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                // ...
+              })
+              .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+              });
+
+=======
             
         //     import { initializeApp } from 'firebase/app';
         //     import { storage } from 'firebase/storage';
@@ -124,6 +179,7 @@
             //     // ..
             //   });
                         
+>>>>>>> cb1073c7482d684d82d3799647aec04318de8b0c
         </script>
     </body>
 </html>
